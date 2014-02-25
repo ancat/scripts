@@ -7,7 +7,8 @@ functions or read memory using their names instead of addresses.
 
 ## Example Generated .gdbinit
 
-```set $_init_proc=0x80486bc
+```
+set $_init_proc=0x80486bc
 set $_printf=0x80486f0
 set $_fflush=0x8048700
 set $__exit=0x8048710
@@ -61,11 +62,13 @@ set $endwin=0x804b4e4
 set $wgetch=0x804b4e8
 set $noecho=0x804b4ec
 set $__isoc99_scanf=0x804b4f0
-set $wmove=0x804b4f4```
+set $wmove=0x804b4f4
+```
 
 ## Using the .gdbinit
 
-```gdb-peda$ source .gdbinit
+```
+gdb-peda$ source .gdbinit
 gdb-peda$ break *$play_game
 Breakpoint 1 at 0x8049283
 gdb-peda$ run
@@ -102,4 +105,5 @@ EFLAGS: 0x282 (carry parity adjust zero SIGN trap INTERRUPT direction overflow)
 [------------------------------------------------------------------------------]
 Legend: code, data, rodata, value
 
-Breakpoint 1, 0x08049283 in ?? ()```
+Breakpoint 1, 0x08049283 in ?? ()
+```
